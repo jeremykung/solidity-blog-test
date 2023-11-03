@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "post",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blog.sol": "Twitter"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blog.sol": {
+			"keccak256": "0x0fb2e922a85d110e0534dfa2ba5d389edbe90d9e821857cde776b53e6aaa3e17",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a0b0b81d22e4b8d493c9397215930449ad91f21e95e4cdba1bc154ccc761cb89",
+				"dweb:/ipfs/QmXA8jFioh75UghVkDWRVaE9FdEjXkLgr5mKnCr1PdidwL"
+			]
+		}
+	},
+	"version": 1
+}

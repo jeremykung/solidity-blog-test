@@ -1,0 +1,156 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_content",
+						"type": "string"
+					}
+				],
+				"name": "createPost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getAllPosts",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "likes",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Blog.Post[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
+					}
+				],
+				"name": "getPost",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "likes",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Blog.Post",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blog-Modifiers.sol": "Blog"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blog-Modifiers.sol": {
+			"keccak256": "0x5b3b4b3e33ae80da07d55ee6af9b080d29c3c8267c2d892a8a59797b0713f1b9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9d637a24eec42a63c565f075a4adc45f88ecae6972848030aeb037398878433c",
+				"dweb:/ipfs/QmeT3gsJ65kuo7kRUTNcWM9oQNnxhpr6rs53Pg8tJJiSFh"
+			]
+		}
+	},
+	"version": 1
+}
