@@ -6,6 +6,32 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "MAX_CONTENT_LENGTH",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_newContentLength",
+						"type": "uint16"
+					}
+				],
+				"name": "changeContentLength",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -35,6 +61,11 @@
 				"outputs": [
 					{
 						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
 							{
 								"internalType": "address",
 								"name": "author",
@@ -82,6 +113,11 @@
 					{
 						"components": [
 							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
 								"internalType": "address",
 								"name": "author",
 								"type": "address"
@@ -114,6 +150,55 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_postAuthor",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_postId",
+						"type": "uint256"
+					}
+				],
+				"name": "likePost",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_postAuthor",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_postId",
+						"type": "uint256"
+					}
+				],
+				"name": "unlikeTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -129,7 +214,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Blog-Modifiers.sol": "Blog"
+			"contracts/Blog.sol": "Blog"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -143,12 +228,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Blog-Modifiers.sol": {
-			"keccak256": "0x5b3b4b3e33ae80da07d55ee6af9b080d29c3c8267c2d892a8a59797b0713f1b9",
+		"contracts/Blog.sol": {
+			"keccak256": "0xdd49301c46608c22462e6345de95e97c8d7a84f295b6c6cac7225161d810283d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9d637a24eec42a63c565f075a4adc45f88ecae6972848030aeb037398878433c",
-				"dweb:/ipfs/QmeT3gsJ65kuo7kRUTNcWM9oQNnxhpr6rs53Pg8tJJiSFh"
+				"bzz-raw://d3301b8ef0930364fd29389721bfb8240e1be05db15403a70921bc752e7d681f",
+				"dweb:/ipfs/QmTxhSSUp3NFd8e6nbPwnQH1WqQryC6dW4y8R8Q98k5qP6"
 			]
 		}
 	},
