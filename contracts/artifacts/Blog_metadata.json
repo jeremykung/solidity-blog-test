@@ -6,6 +6,105 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "postCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "liker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "updatedLikeCount",
+						"type": "uint256"
+					}
+				],
+				"name": "postLiked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "unliker",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "updatedLikeCount",
+						"type": "uint256"
+					}
+				],
+				"name": "postUnliked",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "MAX_CONTENT_LENGTH",
 				"outputs": [
@@ -229,11 +328,11 @@
 	},
 	"sources": {
 		"contracts/Blog.sol": {
-			"keccak256": "0xdd49301c46608c22462e6345de95e97c8d7a84f295b6c6cac7225161d810283d",
+			"keccak256": "0x873380777ea9ade967f454e30a3462a7d5ffa538c24940ca3416f8adbd197d7e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d3301b8ef0930364fd29389721bfb8240e1be05db15403a70921bc752e7d681f",
-				"dweb:/ipfs/QmTxhSSUp3NFd8e6nbPwnQH1WqQryC6dW4y8R8Q98k5qP6"
+				"bzz-raw://ba3073716978c310629cc1d10896e20f7941cfcd8c43b8b2ef4ea6d3c4bae785",
+				"dweb:/ipfs/QmUKMcqK5UyZA1MfUJqTnc6TmnoMUcTqUmBNZBXxfTz7Jt"
 			]
 		}
 	},

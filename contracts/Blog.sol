@@ -16,7 +16,11 @@ contract Blog {
         uint256 likes;
     }
 
-    mapping(address => Post[]) private posts; 
+    mapping(address => Post[]) private posts;
+
+    event postCreated(uint256 id, address author, string title, string content, uint256 timestamp);
+    event postLiked(address liker, address author, uint256 id, uint256 updatedLikeCount);
+    event postUnliked(address unliker, address author, uint256 id, uint256 updatedLikeCount);
 
     modifier onlyOwner {
         require(owner == msg.sender, "Must be contract owner for this action");
@@ -40,17 +44,21 @@ contract Blog {
         });
 
         posts[msg.sender].push(newPost);
+
+        emit postCreated(newPost.id, newPost.author, newPost.title, newPost.content, newPost.timestamp);
     }
 
     function likePost(address _postAuthor, uint256 _postId) external {
         require(posts[_postAuthor][_postId].id == _postId, "Post does not exist");
         posts[_postAuthor][_postId].likes += 1;
+        emit postLiked(msg.sender, _postAuthor, _postId, posts[_postAuthor][_postId].likes);
     }
 
     function unlikeTweet(address _postAuthor, uint256 _postId) external {
         require(posts[_postAuthor][_postId].id == _postId, "Post does not exist");
         require(posts[_postAuthor][_postId].likes > 0, "Can't have negative likes");
         posts[_postAuthor][_postId].likes -= 1;
+        emit postUnliked(msg.sender, _postAuthor, _postId, posts[_postAuthor][_postId].likes);
     }
 
     function getPost(uint _i) public view returns (Post memory) {
