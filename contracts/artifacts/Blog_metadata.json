@@ -156,7 +156,7 @@
 						"type": "address"
 					}
 				],
-				"name": "getAllPosts",
+				"name": "getAllPostsByAddress",
 				"outputs": [
 					{
 						"components": [
@@ -328,11 +328,11 @@
 	},
 	"sources": {
 		"contracts/Blog.sol": {
-			"keccak256": "0x873380777ea9ade967f454e30a3462a7d5ffa538c24940ca3416f8adbd197d7e",
+			"keccak256": "0xb2494df46ca91456bf5efe3edeee6a0878beaab796c25bc7da0635ede6534d14",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ba3073716978c310629cc1d10896e20f7941cfcd8c43b8b2ef4ea6d3c4bae785",
-				"dweb:/ipfs/QmUKMcqK5UyZA1MfUJqTnc6TmnoMUcTqUmBNZBXxfTz7Jt"
+				"bzz-raw://92fb989575932cb7247c146a2cf7113a552a6d6aa0dff28ca73eb25584af9236",
+				"dweb:/ipfs/QmbjHKcNAwLLnNErF89yMmFSpTQffWapJ6kjMB1iCnCAY5"
 			]
 		}
 	},

@@ -65,7 +65,11 @@ contract Blog {
         return posts[msg.sender][_i];
     }
 
-    function getAllPosts(address _owner) public view returns (Post[] memory) {
+    function getAllPostsByAddress(address _owner) public view returns (Post[] memory) {
         return posts[_owner];
     } 
+    
+    // function getAllPosts() public view returns (Post[] memory) {
+    //     return posts;
+    // }
 }
